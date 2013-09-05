@@ -1,0 +1,456 @@
+@charset "UTF-8";
+/* --------------------------------------------CSS Document ----------------------*/
+
+/*-------------------------------------------- Body style---------------------- */  
+
+body{  
+  border:1px solid black; 
+  width:480px;
+  margin:0 auto;  
+  background: #f0f0f0;  	
+  font: 13px/18px Helvetica, Arial, sans-serif;
+  color: red;    
+}
+
+@font-face {
+  font-family: 'wonFont';
+  src: url(../fonts/wonderland.ttf);
+}
+
+@font-face {
+  font-family: 'creeperFont';
+  src: url(../fonts/creeper.ttf);
+}
+
+
+
+/*---------------------- Header, Nav and Footer, Aside, Section general style--------------*/
+
+
+header, nav, footer, aside, #main {
+  color: black;
+  margin:10px 0px;  
+  background: white;  
+  border-radius:8px;
+  box-shadow:3px 3px 1px #666;
+}
+
+/* ----------------------------------------The header------------------------ */ 
+
+header{
+  height:80px;
+  background-image: url(images/backgrounds/header.png);
+}
+
+header hgroup{
+  float:left;
+  margin-left:10px;
+  position: relative;
+  right:10px;
+}
+
+header img{	
+  height: 30px;
+  margin: 10px;
+  float: left;
+  position: relative;
+  top: 15px;
+}
+
+/* ----------------------Nav--------------------------- */ 
+nav{
+  height:35px;
+  background-image:url(images/backgrounds/nav.png);
+}
+
+#nav_links {
+  float:left;
+}
+
+#nav_links ul li a{
+  color: #000;
+  text-decoration: none;  
+  text-transform:uppercase;
+  text-shadow:#CCC 2px 2px;
+  font-size: 14px; 
+  font-weight:bold;
+}
+
+#nav_links ul li a:hover{
+  color: #80B026;  
+  text-shadow:#000 0px 0px;
+}
+
+#nav_links ul{
+  list-style-type: none;
+  padding:0px;
+  margin:0px;
+}
+nav ul{
+  list-style-type: none;
+  padding:10px;
+  margin:0px;
+}
+
+nav ul li{
+  float: left;
+  margin: 2px 4px 4px 2px;
+  width: 80px;  
+  line-height: 26px;  
+  border:1px solid #80B026;
+  border-radius:4px;
+  box-shadow:#CCC 2px 2px;
+  background: #EBE8E3;  
+  text-align: center;   
+}
+
+#nav_social {
+   float:right; 
+   position: relative;
+   top:-10px;
+}
+
+#nav_social  li {
+  width: 26px;
+}
+
+#nav_social img{
+  border-radius:4px;
+  height: 26px;    
+}
+
+nav .navsearch{
+	float: right;
+	margin: 5px;
+	position: relative;
+	left: 60px;
+	top: -50px;	
+	width: 100px;
+	height: 0px;
+}
+
+.submenu{
+  position:absolute;
+  width: 90px;   
+  margin-left:10px;
+  background: #EBE8E3;  
+  border:1px solid #80B026;
+  border-radius:4px;
+  box-shadow:#CCC 2px 2px;
+  -webkit-transform: scale(0,0);	
+  -moz-transform: scale(0,0);	
+  -o-transform: scale(0,0);	
+  
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  -moz-transition: -moz-transform .2s ease-in-out;
+  -o-transition: -o-transform .2s ease-in-out;
+  z-index:2;  
+}
+
+.submenu li{
+  margin:3px 3px;
+}
+
+li:hover .submenu { 
+  -webkit-transform: scale(1,1);	
+  -moz-transform: scale(1,1);	
+  -o-transform: scale(1,1);	
+}
+
+
+
+/* ----------------------Footer--------------------------- */ 
+
+footer{
+  height:60px;
+  display:none;
+}
+
+.clearFloatingBoxes{
+  clear:both;
+}
+
+footer{
+  height:60px;
+  background-image:url(images/backgrounds/header.png);
+}
+
+footer hgroup ul{
+ text-align: center;
+ color: black;
+ line-width: 90;
+}
+
+.copyright{
+ text-align: center;
+ color: black;
+ font-size: 10px;
+}
+
+
+
+/* ------------------------------Everything Side bar related---------------------- */ 
+
+aside{
+  width:80px;
+  min-height:400px;
+  float:left;
+  display:none;
+}
+
+#aside_links ul li{
+  float: center;
+  margin: 1px 1px 1px 1px;
+  width: 130px;  
+  line-height: 26px;  
+  border:1px solid #80B026;
+  border-radius:4px;
+  box-shadow:#CCC 2px 2px;
+  background: #EBE8E3;  
+  text-align: center;  
+  position: relative; left: 13px;
+  display:none; 
+}
+
+#aside_links ul li a{
+  display: block;
+  color: #000;
+  text-decoration: none;  
+  font-size: 12px; 
+  display:none; 
+}
+
+#aside_links{
+	list-style: none;
+	padding: 0;
+  -webkit-transform: rotate(-10deg);  /* Safari & Chrome   */
+  -moz-transform: rotate(-10deg);     /* Mozilla Firefox   */
+  -o-transform: rotate(-10deg);       /* Opera             */
+  -ms-transform: rotate(-10deg);      /* Internet Explorer */
+  display:none;	
+}
+
+#aside_text{
+  float: center;
+  margin: 0px 0px 0px 0px;
+  width: 110px;  
+  border:1px solid #80B026;
+  border-radius:4px;
+  box-shadow:#CCC 2px 2px;
+  background: #EBE8E3;  
+  text-align: left;  
+  position: relative; left: 13px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px;
+  display:none;  
+}
+
+aside img{
+height: 20px;	
+float: left;
+align: center;
+padding: 10px;
+display:none;	
+}
+
+/*----------------------------------- Everything Main segment related-------- */ 
+
+#main{
+  width:480px;
+  min-height:480px;
+  float:right;
+}
+
+#intro{
+  margin:5px;  
+  background-image:none;
+  box-shadow:none;
+}
+
+#main .t_desc{
+  padding-left:20px;
+  padding-right:10px;
+  font-weight:bold;
+}
+
+#main .f_box{
+  width:240px;
+} 
+
+#main .f_button{
+  float:right;
+  width:60px;
+  height:30px;
+  margin-right:10px;
+}
+
+#main input{
+  margin-right:40px;
+}
+	
+#main textarea{
+  width:560px;
+  height:120px;
+  margin-right:10px;
+}
+
+#main fieldset{
+  width:600px;
+  margin:0px auto;
+  box-shadow:2px 2px #CCC;
+}
+#main .text1 input{
+	margin-right: 0;
+}
+
+#main .text1 label{
+	margin-right: 40px;
+}
+
+.buttons{
+	text-align:right;
+	padding-right:20px;
+}
+
+#main .buttons input{
+
+	margin-right:0;
+	margin-left:10px;
+}
+
+.article_sum .center{
+  text-align:center;
+}
+
+.article_sum table{
+  border:2px solid green;
+  border-radius:5px;
+}
+
+.article_sum td, .article_sum th{
+  border:1px solid black;
+  border-radius:2px;
+  margin:0px auto;
+  width:80px;
+}
+
+.article_sum{
+  float:left;
+  margin:10px;  
+  padding:10px;
+  width:430px;
+  min-height:120px;  
+  border-radius: 10px;
+  border:1px solid green;
+  background-color:#FAF9F5;
+  box-shadow:#CCC 4px 4px 2px;
+}
+
+.article_sum header{
+  padding:0px;
+  margin:0px;
+  background:none;
+  box-shadow:none;
+  height:auto;
+}
+
+.article_sum header h3{
+  padding:0px;
+  margin:0px;	
+}
+
+.article_sum header small{
+  color:#80B026;
+  font-style:italic;
+  font-size:12px;
+  text-decoration:none;
+}
+
+.article_sum p{
+  text-decoration:none;
+  text-align:justify;
+  font-size: 12px; 
+}
+
+.article_sum img{
+  width: 80px;  
+  float:left;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+/* --------------------------------Font effect for Index page---------------------- */ 
+
+.dCreepFont{
+  margin:16px;
+  font-size:28px;
+  font-family: 'creeperFont';
+}
+
+.dWonFont{
+  margin:16px;
+  font-size:38px;
+  font-family: 'wonFont';
+}
+
+/*------------------------------------- Video measurements---------------------- */ 
+
+.article_sum video{
+	width:320px;
+	border:1px solid grey;
+}
+
+/*------------------------------------ Audio measurements---------------------- */ 
+
+.article_sum audio{
+	width:320px;
+	border:1px solid grey;
+}
+
+/*------------------------------------ Form styling -------------------------- */ 
+
+#main input:focus{ background: #D0FFD0; 
+}
+
+#main input:enabled{ color:#060; 
+}
+
+#main input:disabled{ color:#F00; 
+}
+
+tr:nth-child(2n+1) { background: #D0D0D0; 
+}
+
+tr:first-child { background: #D0FFD0; 
+}
+
+tr:last-child  { background: #FFD0D0; 
+} 
+
+.t_desc:first-letter{font-size:18px;
+}
+
+#main p:before { content:"~|"; 
+}
+
+#main p:after { content:"|~"; 
+}
+
+
+/*--------------------------------Transformation and animations----------------*/
+
+.grow:hover {
+ -webkit-transform: scale(2,2);
+ -moz-transform: scale(2,2);    
+ -o-transform: scale(2,2);    
+ -ms-transform: scale(2,2); 
+ -transform: scale(2,2);   
+
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -moz-transition: -moz-transform .5s ease-in-out;
+  -o-transition: -o-transform .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+

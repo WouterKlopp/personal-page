@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>My Personal Webpage</title>
+    <!-- TemplateEndEditable -->
+    <link rel="stylesheet" type="text/css" media="all" href="../layout/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../layout/handheld.css" media="only screen and (max-width: 480px)">
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+  </head>
+    
+    <body onLoad="init()"> 
+    
+    <!-- Header -->
+    
+    <header>
+    <a href="../index.html">
+    	<img src="../images/logos/igad.png" />
+    </a>
+
+ 	 <hgroup>
+    <h1>Wouter Klopping</h1>
+    <h2>Welcome to my webpage</h2>
+ 	 </hgroup>
+
+    </header>
+    
+<!-- Horizontal Navigation Bar -->
+
+<nav>
+  <div id="nav_links">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      	<li>
+  <a href="#courses">Courses</a>
+  <ul class="submenu">
+    <li><a href="#courses">Block A</a></li>
+    <li><a href="#courses">Block B</a></li>
+    <li><a href="#courses">Block C</a></li>
+    <li><a href="#courses">Block D</a></li>
+  </ul>
+</li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="../contacts.html">Contacts</a></li>
+     </ul>
+  </div>
+
+  <div id="nav_social">
+   
+    <ul>
+ 	  <li>
+        <a href="http://www.facebook.com" target="_blank">
+          <img src="../images/logos/facebook.png" />
+        </a>
+      </li>
+      <li>
+        <a href="http://www.twitter.com" target="_blank">
+          <img src="../images/logos/twitter.png" />
+        </a>
+      </li>
+      <li>
+        <a href="http://www.digg.com" target="_blank">
+          <img src="../images/logos/digg.png" />
+        </a>
+      </li>
+    </ul>
+  </div>
+  	<form class="navsearch">
+    	<input type="search" class="navsearch" placeholder="Search" required />
+    </form>
+</nav>
+    
+    <!-- Side Bar -->
+    
+     <aside>
+
+<div id="aside_links">
+    <ul>
+      <li><a href="../Homework.html">Homework</a></li>
+      <li><a href="../projectBall.html">Ball Project</a></li>
+      <li><a href="../Thesmiley.html">The Smiley</a></li>
+      <li><a href="../GradientAndReflection.html">Gradient and Reflection</a></li>
+    </ul>
+  </div>
+
+<div id="aside_text">  Lorem ipsum dolor sit amet, semper sit amet facilisis id, ultrices sit amet enim. Aliquam semper, turpis at malesuada porta, risus sem feugiat ipsum, fermentum congue nisl nisl at ante.</div>
+
+ <img src="../images/logos/nhtv.png" class="grow">
+ <img src="../images/logos/made.png" class="grow">
+
+    </aside>
+
+    <!-- Main -->
+    
+    <section id="main">
+      <!-- TemplateBeginEditable name="main" --> 
+      <header id="intro"> 
+     Lorem ipsum dolor sit amet, semper sit amet facilisis id, ultrices sit amet  enim. Aliquam semper, turpis at malesuada porta, risus sem feugiat ipsum, fermentum congue nisl nisl at ante. Etiam sem ante, pulvinar quis ultrices ac, tincidunt nec tellus. Praesent vel nisi sem. In dictum facilisis risus ac porta. <a href="#">More...</a> </header>
+      <article class="article_sum">
+        <header>
+          <h3>Article title</h3>
+          <small> Posted on
+            <time datetime="2009-06-29T23:31:45+01:00">July 4th 2013</time>
+          </small> </header>
+        <img src="../images/articles/demo.png"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci <a href="#">imperdiet</a> nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio...<a href="#">More...</a></p>
+      </article>
+      <article class="article_sum">
+        <header>
+          <h3>Article title</h3>
+          <small> Posted on
+            <time datetime="2009-06-29T23:31:45+01:00">July 4th 2013</time>
+          </small> </header>
+        <img src="../images/articles/demo.png"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci <a href="#">imperdiet</a> nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio...<a href="#">More...</a></p>
+      </article>
+      <article class="article_sum">
+        <header>
+          <h3>Article title</h3>
+          <small> Posted on
+            <time datetime="2009-06-29T23:31:45+01:00">July 4th 2013</time>
+          </small> </header>
+        <img src="../images/articles/demo.png"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod tellus eu orci <a href="#">imperdiet</a> nec rutrum lacus blandit. Cras enim nibh, sodales ultricies elementum vel, fermentum id tellus. Proin metus odio, ultricies eu pharetra dictum, laoreet id odio...<a href="#">More...</a></p>
+      </article>
+      
+	  <!-- TemplateEndEditable -->
+      
+    </section>
+    
+    <div class="clearFloatingBoxes"></div>
+   
+    <!-- Footer -->
+    
+    <footer>
+     
+      <hgroup>
+     	 <ul>
+    <pre><a href="#">Language</a>          <a href="#">Conditions</a>          <a href="#">Privacy Policy</a></pre>
+  			  
+  	 	 </ul>
+    		 <p class="copyright">Copyright 2013 &copy; Wouter Klopping - 102864 CT1 - 3GA-4DP</p>
+ 	 </hgroup>
+ 
+    </footer>
+  
+  </body>
+
+</html>
